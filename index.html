@@ -1155,15 +1155,7 @@ git config core.hooksPath .devtrace/hooks</div>
     });
   }
 
-  // Simple search filter
-  function filterContent(val) {
-    const sections = document.querySelectorAll('.section, .hero');
-    const q = val.toLowerCase();
-    sections.forEach(s => {
-      if (!q) { s.style.display = ''; return; }
-      s.style.display = s.innerText.toLowerCase().includes(q) ? '' : 'none';
-    });
-  }
+ 
 
   // Active sidebar link on scroll
   const sidebarLinks = document.querySelectorAll('.sidebar-link');
